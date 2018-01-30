@@ -24,3 +24,11 @@ def position_taken?(board, index)
   board[index] == "nil"
   board[index] == "X" || board[index] == "O"
 end
+# and then convert user's input to a location on board
+def input_to_index(input)
+  input.to_i - 1
+end
+# and then define #move
+def move(board, index, user_marker = 'X')
+  board[index.to_i] = user_marker
+end
