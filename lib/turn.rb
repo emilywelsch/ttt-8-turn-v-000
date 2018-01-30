@@ -1,4 +1,4 @@
-# define #display_board
+# first let's define #display_board
 board = [" ", " ", " ", " ", " ", " ", " ", " ", " "]
 def display_board(board)
   puts " #{board[0]} | #{board[1]} | #{board[2]} "
@@ -7,7 +7,7 @@ def display_board(board)
   puts "-----------"
   puts " #{board[6]} | #{board[7]} | #{board[8]} "
 end
-
+# now define #valid_move?
 board = []
 index = 0
 def valid_move?(board, index)
@@ -17,7 +17,7 @@ def valid_move?(board, index)
     return false
   end
 end
-
+# and why not add the definition for #position_taken?
 def position_taken?(board, index)
   board[index] != " "
   board[index] != ""
