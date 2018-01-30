@@ -33,8 +33,10 @@ def move(board, index, user_marker = 'X')
   board[index.to_i] = user_marker
 end
 # define #turn
-def turn
+def turn(board)
 # ask for input
+  puts "Please enter 1-9:"
+end
 # get input
 # convert input to index
 # if index is valid
