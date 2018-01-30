@@ -50,5 +50,5 @@ def turn(board)
   else
     # ask for input again until you get a valid input
     turn(board)
-    end
+  end
 end
