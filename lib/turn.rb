@@ -29,8 +29,6 @@ def input_to_index(input)
   input.to_i - 1
 end
 # define #move
-board = []
-index = 0
 def move(board, index, user_marker = 'X')
   board[index.to_i] = user_marker
 end
