@@ -32,3 +32,7 @@ end
 def move(board, index, user_marker = 'X')
   board[index.to_i] = user_marker
 end
+# define #turn
+def turn
+  # execute something
+end
