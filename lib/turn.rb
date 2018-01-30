@@ -48,6 +48,8 @@ def turn(board)
     display_board(board)
 # else
   else
-    
+    loop do
+      puts "Please enter 1-9:"
+    end
   # ask for input again until you get a valid input
 end
