@@ -1,4 +1,4 @@
-# first let's define #display_board
+# define #display_board
 board = [" ", " ", " ", " ", " ", " ", " ", " ", " "]
 def display_board(board)
   puts " #{board[0]} | #{board[1]} | #{board[2]} "
@@ -7,7 +7,7 @@ def display_board(board)
   puts "-----------"
   puts " #{board[6]} | #{board[7]} | #{board[8]} "
 end
-# now define #valid_move?
+# define #valid_move?
 board = []
 index = 0
 def valid_move?(board, index)
@@ -17,18 +17,18 @@ def valid_move?(board, index)
     return false
   end
 end
-# and why not add the definition for #position_taken?
+# define #position_taken?
 def position_taken?(board, index)
   board[index] != " "
   board[index] != ""
   board[index] == "nil"
   board[index] == "X" || board[index] == "O"
 end
-# and then convert user's input to a location on board
+# convert user's input to a location on the board
 def input_to_index(input)
   input.to_i - 1
 end
-# and then define #move
+# define #move
 def move(board, index, user_marker = 'X')
   board[index.to_i] = user_marker
 end
